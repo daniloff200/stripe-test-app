@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Raleway";
+  margin: 0;
+}

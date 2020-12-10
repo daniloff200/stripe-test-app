@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="card" *ngFor="let product of products">
+        <div class="photo">
+            <img src="{{product.image}}">
+        </div>
+        <div class="description">
+            <h2>{{product.title}}</h2>
+            <h4>{{product.subTitle}}</h4>
+            <h1>{{product.price | currency}}</h1>
+            <p>{{product.description}}</p>
+            <button (click)="checkout(product)">Checkout</button>
+        </div>
+  </div>
+
+  <div class="info">Use test cards from <a target="_blank" href="https://stripe.com/docs/testing">https://stripe.com/docs/testing</a></div>
+</div>
